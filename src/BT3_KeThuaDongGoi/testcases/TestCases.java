@@ -1,12 +1,14 @@
 package BT3_KeThuaDongGoi.testcases;
 
 import BT3_KeThuaDongGoi.common.BaseTest;
+import BT3_KeThuaDongGoi.common.Constants;
 
 public class TestCases extends BaseTest {
 
     public void TC1Login()
     {
 
+        Constants.setBrowser("Edge");
         createDriver();
         System.out.println("Navigate to url https://cms.anhtester.com/login");
         System.out.println("Enter Email and Password");
@@ -16,6 +18,7 @@ public class TestCases extends BaseTest {
     }
     public void  TC2AddCategory()
     {
+        Constants.setBrowser("Firefox");
         createDriver();
         System.out.println("Navigate to url https://cms.anhtester.com/login");
         System.out.println("Enter Email and Password");
